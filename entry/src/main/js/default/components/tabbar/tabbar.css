@@ -1,0 +1,11 @@
+.tabbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 360px;
+    background-color: #FAFAFA;
+/*    height: 576px;*/
+}
+.tabbar-item {
+    background-color: #FAFAFA;
+}

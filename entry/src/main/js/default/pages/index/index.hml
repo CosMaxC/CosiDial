@@ -1,0 +1,12 @@
+<element name='comp' src='../../components/tabbar/tabbar.hml'></element>
+<element name='comp1' src='../../components/dial/dial.hml'></element>
+<element name='comp2' src='../../components/friends/friends.hml'></element>
+<element name='comp3' src='../../components/collections/collections.hml'></element>
+
+<div class="container">
+
+    <comp1 if="{{index==0}}"></comp1>
+    <comp2 if="{{index==1}}"></comp2>
+    <comp3 if="{{index==2}}"></comp3>
+    <comp index="{{index}}" @change-index="changeIndex"></comp>
+</div>

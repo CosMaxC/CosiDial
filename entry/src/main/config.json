@@ -1,0 +1,66 @@
+{
+  "app": {
+    "bundleName": "com.cosmax.cosidial",
+    "vendor": "cosmax",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.cosmax.cosidial",
+    "name": ".MyApplication",
+    "mainAbility": "com.cosmax.cosidial.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "metaData":{
+      "customizeData":[
+        {
+          "name": "hwc-theme",
+          "value": "androidhwext:style/Theme.Emui.Light.NoTitleBar",
+          "extra": ""
+        }
+      ]
+    },
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.cosmax.cosidial.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "js": [
+      {
+        "name": "default",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": true
+        },
+        "pages": [
+          "pages/index/index"
+        ]
+      }
+    ]
+  }
+}

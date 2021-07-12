@@ -1,0 +1,84 @@
+<div id="wrapper">
+    <div id="div3">
+        <text id="text4">{{title}}</text>
+    </div>
+    <div id="div5">
+        <stack id="calls">
+            <div>
+                <list id="list56">
+                    <list-item id="list-item57" for="{{virtualPhones}}">
+                        <div id="div58">
+                            <div id="div60">
+                                <div id="div62">
+                                    <div id="div64">
+                                        <image id="image65" src="{{$item.img}}"/>
+                                    </div>
+                                    <text id="text66">{{$item.phone}}</text>
+                                </div>
+                                <div id="div63">
+                                    <div id="div68"></div>
+                                    <text id="text69">{{$item.remark}}</text>
+                                </div>
+                            </div>
+                            <div id="div61">
+                                <text id="text67">{{$item.time}}</text>
+                            </div>
+                        </div>
+                    </list-item>
+                </list>
+            </div>
+
+<!--            <div id="numbers"  style="animation-direction: alternate;animation-iteration-count: infinite;"   >-->
+<!--            <div id="numbers"  style="animation-fill-mode: {{dialButtonHide?'forwards':'backwards'}}"   >-->
+<!--            <div id="numbers" class="numbersAnimation" >-->
+            <div id="numbers" >
+                <div id="div10" >
+                    <list id="list24">
+                        <list-item id="list-item25" for="{{phoneNumInfos}}">
+                            <div id="div27" disabled="false" focusable="false">
+                                <div id="div28">
+                                    <stack id="stack32">
+                                        <stack id="stack33">
+                                            <div id="div42">
+                                                <button id="button43"></button>
+                                            </div>
+                                        </stack>
+                                        <div id="div39">
+                                            <text id="text40">{{$item.id}}</text>
+                                            <text id="text41">{{$item.subtitle}}</text>
+                                        </div>
+                                    </stack>
+                                </div>
+                            </div>
+                        </list-item>
+                    </list>
+                </div>
+
+            </div>
+            <div id="butttons">
+                <div id="div9">
+                    <div id="div44" show="{{ dialButtonHide }}" >
+<!--                    <div id="div44" show="{{ dialButtonHide }}" >-->
+                        <div id="div47">
+                            <div id="div48">
+                                <button id="button49" icon="common/images/dial/phonecall_black.png" onclick="changePhoneStatus" ></button>
+                            </div>
+                            <div id="div50">
+                                <div id="div51">
+                                    <button id="button54" icon="common/images/dial/play.png"></button>
+                                </div>
+                                <div id="div53">
+                                    <button id="button55" icon="common/images/dial/save.png"></button>
+                                </div>
+                            </div>
+                            <div id="div48">
+                                <button id="button50" icon="common/images/dial/backspace.png"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="button10" icon="common/images/dial/phoneCall.png" show="{{ !dialButtonHide }}" onclick="changePhoneStatus" ></button>
+                </div>
+            </div>
+        </stack>
+    </div>
+</div>
